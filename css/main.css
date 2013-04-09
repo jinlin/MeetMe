@@ -1,0 +1,430 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+
+}
+header, section, footer, aside, nav, artile, hgroup{
+	display: block;
+}
+body{
+	text-align: center;
+}
+.mobile_body{
+    overflow-x: hidden;
+    height: 99.9%;
+    margin: 0;
+    border-width: 0;
+    color: #333333;
+    text-shadow: 0 1px 0 #FFFFFF;
+
+}
+.container{
+    min-height: 305px;
+    display: block;
+    overflow: visible;
+    border: 0 none;
+    outline: medium none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica,Arial,sans-serif;
+    background: linear-gradient(#F9F9F9, #EEEEEE) repeat scroll 0 0 #F9F9F9;
+    color: #333333;
+    text-shadow: 0 1px 0 #FFFFFF;
+
+}
+.container_header{
+    background: linear-gradient(#3C3C3C, #111111) repeat scroll 0 0 #111111;
+    border: 1px solid #333333;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 0 -1px 1px #000000;
+}
+.container_title{
+    display: block;
+    font-size: 16px;
+    margin: 0.6em 30% 0.8em;
+    min-height: 1.1em;
+    outline: 0 none !important;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Helvetica,Arial,sans-serif;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 1px #000000;
+}
+.container_content{
+    border-width: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding: 15px;
+}
+
+
+.create_content{
+    cursor: pointer;
+    display: block;
+    margin: 0.5em 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    background-clip: padding-box;
+    border-radius: 1em 1em 1em 1em;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    background-clip: padding-box;
+    border: 1px solid #CCCCCC;
+    color: #222222;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #FFFFFF;
+    font-family: Helvetica,Arial,sans-serif;
+    text-decoration: none;
+}
+.create_content:hover , .appointment:hover, .submit_button:hover, .delete_button:hover{
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #3373A5;
+    background: linear-gradient(#5393C5, #6FACD5) repeat scroll 0 0 #5393C5;
+    border: 1px solid #2373A5;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #3373A5;
+
+}
+.create_content_inner{
+    display: block;
+    font-size: 16px;
+    min-width: 0.75em;
+    overflow: hidden;
+    padding: 0.6em 20px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-clip: padding-box;
+    border-radius: 1em 1em 1em 1em;
+}
+.button_text{
+    -moz-user-select: none;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.appointments{
+    margin: 0 0;
+    list-style: none outside none;
+    padding: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    background-clip: padding-box;
+    border-radius: 0.6em 0.6em 0.6em 0.6em;
+}
+.appointments_text{
+    cursor: default;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.5em 15px;
+    display: block;
+    margin: 0;
+    overflow: visible;
+    position: relative;
+    text-align: left;
+    list-style: none outside none;
+    background-clip: padding-box;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    font-family: Helvetica,Arial,sans-serif;
+    background: linear-gradient(#6FACD5, #497BAE) repeat scroll 0 0 #5E87B0;
+    border: 1px solid #456F9A;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #3E6790;
+}
+.appointment,.no_appointment{
+    border-left-width: 1px;
+    border-right-width: 1px;
+    margin: 0;
+    overflow: visible;
+    position: relative;
+    text-align: left;
+    display: block;
+    list-style: none outside none;
+    padding: 0;
+    cursor: pointer;
+    font-family: Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    background: linear-gradient(#FFFFFF, #F1F1F1) repeat scroll 0 0 #EEEEEE;
+    color: #222222;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.appointment_title{
+    display: block;
+    padding: 0;
+    position: relative;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    margin: 0;
+    overflow: visible;
+    text-align: left;
+    list-style: none outside none;
+    display: block;
+    font-size: 16px;
+    min-width: 0.75em;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.appointment_title_text{
+    -moz-user-select: none;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.appointment_link,.no_appointment_link{
+    padding-right: 40px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #2F3E46;
+    text-decoration: none !important;
+
+}
+.appointment_link>span,.no_appointment_link>span{
+
+    display: block;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    margin: 0.6em 30% 0.8em;
+
+    outline: 0 none !important;
+
+    padding: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+/*-------appointment_form page-----*/
+.appointment_end_time{
+    margin-top: 15px;
+
+}
+.back_button{
+    display: inline-block;
+    margin: 0;
+    left: 5px;
+    position: absolute;
+    top: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    background-clip: padding-box;
+    border-radius: 1em 1em 1em 1em;
+    border: 1px solid #111111;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #111111;
+    text-align: center;
+    background: linear-gradient(#444444, #2D2D2D) repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.edit_button{
+    display: inline-block;
+    margin: 0;
+    right: 5px;
+    position: absolute;
+    top: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    background-clip: padding-box;
+    border-radius: 1em 1em 1em 1em;
+    border: 1px solid #111111;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #111111;
+    text-align: center;
+    background: linear-gradient(#444444, #2D2D2D) repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+}
+.back_button_inner, .edit_button_inner{
+    padding: 0.55em 11px 0.5em;
+    background-clip: padding-box;
+    border-radius: 1em 1em 1em 1em;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
+    display: block;
+    font-size: 14px;
+    min-width: 0.75em;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.appointment_title_form,.appointment_name, .appointment_description{
+    border-width: 0;
+    margin: 1em 0;
+    padding: 0;
+    max-width: 100%;
+    overflow: visible;
+    clear: both;
+    display: block;
+    position: relative;
+}
+.form_field{
+    margin: 0;
+    border-width: 0;
+    background-clip: padding-box;
+    border-radius: 0.6em 0.6em 0.6em 0.6em;
+}
+.control_group{
+    display: inline-block;
+    width: 78%;
+}
+.label_text{
+    display: inline-block;
+    margin: 0 2% 0 0;
+    vertical-align: top;
+    width: 20%;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+    float:left;
+}
+.form_input{
+    display: inline-block;
+    width: 78%;
+    margin: 0;
+    font-size: 14px;
+    -moz-box-sizing: border-box;
+    line-height: 1.4;
+    outline: 0 none;
+    padding: 0.4em;
+    font-family: Helvetica,Arial,sans-serif;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+    border-radius: 0.6em 0.6em 0.6em 0.6em;
+    background-clip: padding-box;
+    border: 1px solid #AAAAAA;
+    color: #333333;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.submit_button{
+    cursor: pointer;
+    display: block;
+    margin: 0.5em 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    background-clip: padding-box;
+    border-radius: 1em 1em 1em 1em;
+    font-family: Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    border: 1px solid #CCCCCC;
+    color: #222222;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.delete_button{
+    cursor: pointer;
+    display: block;
+    margin: 0.5em 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    background-clip: padding-box;
+    border-radius: 1em 1em 1em 1em;
+    font-family: Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    border: 1px solid #CCCCCC;
+    color: #222222;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #FFFFFF;
+
+
+}
+.submit_button_inner{
+    display: block;
+    font-size: 16px;
+    min-width: 0.75em;
+    overflow: hidden;
+    padding: 0.6em 20px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-clip: padding-box;
+    border-radius: 1em 1em 1em 1em;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.button_hidden{
+    font-family: Helvetica,Arial,sans-serif;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
+    border: medium none;
+    cursor: pointer;
+    font-size: 1px;
+    height: 100%;
+    left: 0;
+    opacity: 0.1;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    width: 100%;
+}
+.validate_text{
+    color: red;
+    font-family: Helvetica,Arial,sans-serif;
+
+}
+
+
+
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; }
+.ui-timepicker-rtl dl dd { margin: 0 65px 10px 10px; }
+
+
+
+
+
+
+
