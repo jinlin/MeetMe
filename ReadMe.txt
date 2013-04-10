@@ -1,3 +1,6 @@
+DEMO Link: 
+http://www.mixiuzone.com/jinlin/projects/assignment/home.html
+
 Requirement:
     Create an appointment  ->  clicking Create button 
     View Appointments   ->  shows home page after create
