@@ -1,5 +1,4 @@
-DEMO Link: 
-http://www.mixiuzone.com/jinlin/projects/assignment/home.html
+
 
 Requirement:
     Create an appointment  ->  clicking Create button 
