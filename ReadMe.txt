@@ -1,5 +1,8 @@
 
 
+DEMO Link: 
+   http://ec2-54-224-138-29.compute-1.amazonaws.com/jinlin/meetup/home.html#appointments
+
 Requirement:
     Create an appointment  ->  clicking Create button 
     View Appointments   ->  shows home page after create
