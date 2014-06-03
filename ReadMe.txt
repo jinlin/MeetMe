@@ -2,6 +2,8 @@
 
 DEMO Link: 
    http://ec2-54-224-138-29.compute-1.amazonaws.com/jinlin/meetup/home.html#appointments
+   
+   The ec2 instance is terminted, you can download as zip and open it directly.
 
 Requirement:
     Create an appointment  ->  clicking Create button 
